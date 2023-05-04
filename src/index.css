@@ -25,3 +25,26 @@ code {
 .navbar-nav a {
   color: #2e3191;
 }
+
+.bg-hero-penuh {
+  background-image: url(../public/hero-penuh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.bg-hero-sebahagian {
+  background-image: url(../public/hero-sebahagian.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+@media (max-width: 600px) {
+  .bg-hero-penuh,
+  .bg-hero-sebahagian {
+    height: 50vh;
+  }
+}

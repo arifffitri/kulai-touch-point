@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import LanguageRadioButton from "./components/LanguageRadioButton";
 import HomeScreen from "./screens/HomeScreen";
+import JenisPengeluaranScreen from "./screens/JenisPengeluaranScreen";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -14,7 +15,7 @@ function App() {
       <div className="App">
         {/*  Navigation Bar */}
         <header className="App-header">
-          <Navbar bg="light" expand="lg" fixed="top" className="shadow">
+          <Navbar bg="light" expand="lg" className="shadow">
             <Navbar.Brand href="/">
               <img src={logo} width="90" className="d-inline-block align-top ms-4 " alt="logo" />
             </Navbar.Brand>
@@ -48,6 +49,7 @@ function App() {
         {/*  End of Navigation Bar */}
         <body>
           <Routes>
+            <Route path="/jenispengeluaran" element={<JenisPengeluaranScreen />} />
             <Route path="/" element={<HomeScreen />} />
           </Routes>
         </body>
